@@ -562,8 +562,16 @@ img {
   background-color: #4d5ae5;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
   border: none;
   position: relative;
@@ -579,20 +587,10 @@ img {
 .footer-form-button:focus {
   background-color: #404bbf;
 }
-.fieldset {
-  display: flex;
-  gap: 24px;
-  border: none;
-  justify-content: flex-start;
-  align-items: baseline;
-  padding: 0;
-}
+
 .footer-icon-button {
   fill: #fff;
-  position: absolute;
-  transform: translateY(-50%);
-  right: 24px;
-  top: 50%;
+  margin-left: 16px;
 }
 /* Section footer end */
 /* modal start */
