@@ -477,7 +477,6 @@ img {
 .footer-icons {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 .footer-icons-title {
   font-weight: 500;
@@ -624,14 +623,18 @@ img {
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
+  padding: 72px 24px 24px 24px;
 }
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
 }
 .icon-modal-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
   position: absolute;
+  width: 24px;
+  height: 24px;
   top: 24px;
   right: 24px;
   border-radius: 50%;
@@ -641,17 +644,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover {
   background-color: #404bbf;
   fill: #fff;
+  border: none;
 }
 .modal-close:focus {
   background-color: #404bbf;
   fill: #fff;
+  border: none;
 }
 .modal-text {
   font-weight: 500;
@@ -660,10 +665,11 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding: 72px 24px 16px;
+  margin-bottom: 16px;
 }
 .modal-fieldset {
   border: none;
+  margin-bottom: 8px;
 }
 .label-text {
   font-weight: 400;
@@ -683,8 +689,6 @@ img {
   outline: none;
 }
 .form-container {
-  padding-left: 24px;
-  padding-right: 24px;
 }
 .input-box {
   position: relative;

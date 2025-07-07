@@ -499,9 +499,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-close">
+        <button class="modal-close" type="button">
           <svg class="icon-modal-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -509,7 +509,7 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <div class="form-container">
           <form>
-            <fieldset class="modal-fieldset">
+            <div class="modal-fieldset">
               <label for="name" class="label-text">Name</label>
               <div class="input-box">
                 <input class="modal-input" type="text" name="name" id="name" />
@@ -517,8 +517,8 @@
                   <use href="./images/icons.svg#icon-user-modal"></use>
                 </svg>
               </div>
-            </fieldset>
-            <fieldset class="modal-fieldset">
+            </div>
+            <div class="modal-fieldset">
               <label for="phone" class="label-text">Phone</label>
               <div class="input-box">
                 <input class="modal-input" type="tel" name="phone" id="phone" />
@@ -526,8 +526,8 @@
                   <use href="./images/icons.svg#icon-phone-modal"></use>
                 </svg>
               </div>
-            </fieldset>
-            <fieldset class="modal-fieldset">
+            </div>
+            <div class="modal-fieldset">
               <label for="email" class="label-text">Email</label>
               <div class="input-box">
                 <input
@@ -540,8 +540,8 @@
                   <use href="./images/icons.svg#icon-mail-modal"></use>
                 </svg>
               </div>
-            </fieldset>
-            <fieldset class="modal-fieldset comment-box">
+            </div>
+            <div class="modal-fieldset comment-box">
               <label for="comment" class="label-text">Comment</label>
               <textarea
                 class="input-comment"
@@ -549,7 +549,7 @@
                 id="comment"
                 placeholder="Text input"
               ></textarea>
-            </fieldset>
+            </div>
           </form>
         </div>
       </div>
