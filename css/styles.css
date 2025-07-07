@@ -515,6 +515,10 @@ img {
 .social-list-item-footer a:focus {
   background-color: #31d0aa;
 }
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
 .form-text {
   display: block;
   font-weight: 500;
@@ -522,7 +526,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 .form-box {
   margin-left: 80px;
