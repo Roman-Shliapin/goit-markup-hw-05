@@ -768,13 +768,15 @@ img {
 }
 .icon-checkbox {
 }
-.checkbox:checked + .checkbox-label .custom-checkbox {
+.checkbox:checked + .checkbox-label .custom-checkbox,
+.checkbox:checked + .checkbox-label .custom-checkbox .icon-checkbox {
   background-color: #404bbf;
   border: none;
-}
-.checkbox:checked + .checkbox-label .custom-checkbox .icon-checkbox {
   fill: #f4f4fd;
 }
+/* .checkbox:checked + .checkbox-label .custom-checkbox .icon-checkbox {
+  fill: #f4f4fd;
+} */
 .link-privacy {
   color: #4d5ae5;
 }
